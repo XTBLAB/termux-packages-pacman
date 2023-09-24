@@ -87,9 +87,9 @@ jobs:
         if $(git log -1 --pretty=%B | grep -q '%needbuild'); then
           needbuild=true
         fi
-        git config --global user.name "termux-pacman-bot"
-        git config --global user.email "termux-pacman-bot@outlook.com"
-        git remote set-url origin "https://termux-pacman-bot:${{ secrets.TOKEN }}@github.com/termux-pacman/termux-packages-pacman.git"
+        git config --global user.name "XTBLAB"
+        git config --global user.email "q15073288637@gmail.com"
+        git remote set-url origin "https://XTBLAB:${{ secrets.PAT }}@github.com/XTBLAB/termux-packages-pacman.git"
         commit "Update system repo"
         git add .
         git reset packages root-packages x11-packages README.md SECURITY.md
